@@ -9,7 +9,6 @@
 header{
     display:flex;
     justify-content: Center ;
-    background-color: #white;
 }
 body {
     background-color: #ffffffff;
@@ -69,7 +68,8 @@ body {
   width: 396px;
   display: flex;
   flex-direction: column;
-  
+  color:#FEE715;
+
   gap: 12px;
   height: 500px;
     overflow-x: auto;
@@ -85,7 +85,7 @@ body {
     margin: 40px 0 0;
     padding: 20px 28px;
     width: 396px;
-    
+    color:#FEE715;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -109,6 +109,8 @@ body {
   gap: 12px;
   height: 500px;
   overflow-x: auto;
+  color:#FEE715;
+
 }
 
 input {
@@ -129,5 +131,13 @@ input:hover {
 
 button {
     cursor: pointer;
+    color:black;
+    background-color:#FEE715;
   }
+
+  h2{
+    color:#FEE715
+  }
+
+  
 
