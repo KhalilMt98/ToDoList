@@ -18,7 +18,7 @@ body {
     margin: 0 100px;
     width:2000px;
     display:flex;
-    justify-content: ;
+    justify-content: space-around;
     height: 90vh;
     gap: 100px
 }
