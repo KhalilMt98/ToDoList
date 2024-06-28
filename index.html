@@ -8,69 +8,43 @@
     <script src="https://kit.fontawesome.com/976c5a37d0.js" crossorigin="anonymous"></script>    
     <title>TO DO LIST</title>
 </head>
+
+<header>
+    <h1>Welcome to </h1>
+    <img src="Assets/Images/Logo.png" alt="Logo" style="width: 150px;"/>
+    <h1>Your Life-Organizer</h1>
+</header>
+
+
+
 <body>
     <div class="container">
-        <div class="side-bar">
-            <img src="Assets/Images/MainLogo.png" alt="MainLogo" class="main-logo">
-            <div class="task-list">
-                <i class="fa-solid fa-list"></i>
-                <h3>TASKS LIST</h3>
-            </div>
-            <div class="rest-bar">
-                <div class="task-list">
-                    <i class="fa-regular fa-square-plus"></i>
-                    <h3>ADD TASK</h3>
-                </div>
-                <div class="task-list">
-                    <i class="fa-solid fa-user-plus"></i>
-                    <h3>SIGN UP</h3>
-                </div>
-            </div>
-        </div>
-        <div class="home-page">
 
-            <div class="title">
-                <h1>Welcome to </h1>
-                <img src="Assets/Images/Logo.png" alt="Logo" class="Logo"/>
-            </div>
+        <section class="add-task">
+            <h2>Add Tasks Here</h2>
+            <input type="text" id="taskName" placeholder="Task Name">
+            <input type="datetime-local" id="taskDue">
+            <input type="text" id="taskPerson" placeholder="Responsible Person">
+            <button onclick="addTask()">Add Task</button>
+        </section>
 
-            <div class="sub-title">
-                <h3>Your Life-Organizer</h3>
-            </div>
+        <section class="pending">
+            <h2>Pending Tasks</h2>
+            <div id="pendingTasks"></div>
+        </section >
 
-            <div class="sign-in">
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button id="login">Log in</button>
-                <a href="#" class="forgotten">Forgotten password?</a>
-            </div >
+        <section class="completed">
+             <h2>Completed Tasks</h2>
+            <div id="completedTasks"></div>
+        </section>
             
-            <div class="sign-up-prompt">
-                <p>&larr; <a href="signup.html" target="_blank"> Don't have an account?</a></p>
-            </div>
-        </div>
-        <div class="ad">
-            <div>
-                <i class="fa-regular fa-square-check"></i>
-                <h2>Easy to Use</h2>
-            </div>
-            <div>
-                <i class="fa-regular fa-square-check"></i>
-                <h2>Organized</h2>
-            </div>
-            <div>
-                <i class="fa-regular fa-square-check"></i>
-                <h2>Assigns Tasks</h2>
-            </div>
-            <div>
-                <i class="fa-regular fa-square-check"></i>
-                <h2>Shareable with Others</h2>
-            </div>
-            <div>
-                <i class="fa-regular fa-square-check"></i>
-                <h2>Free for All!</h2>
-            </div>
-        </div>
+        <section class="overdue">
+            <h2>Overdue Tasks</h2>
+            <div id="overdueTasks"></div>
+        </section>
+
     </div>
+    <script src="Scripts/script.js"></script>
+
 </body>
 </html>
